@@ -2,7 +2,7 @@
 naver band 10주년 이벤트 page(https://campaign.naver.com/band-10th-anniversary/) 의 클론코딩 페이지입니다
 
 ## 주요기능
-[1] html,css,jquey의 전반적인 기능 구현 
+[1] html,css,jquey의 전반적인 기능 구현 </br>
 [2] media query를 이용하여 1920px부터 500px까지 반응형 웹 기능 구현
 
 ### 사용한 SKILLS 
