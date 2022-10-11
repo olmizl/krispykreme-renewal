@@ -1,0 +1,119 @@
+.ink-txt {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.ink-txt img {
+  width: 200px;
+}
+.ink-txt p {
+  font-size: 24px;
+  margin-bottom: 31px;
+  margin-top: 13px;
+}
+.ink-txt h1 {
+  margin-bottom: 40px;
+  font-size: 100px;
+  font-family: "Merriweather", serif !important;
+  font-weight: 900;
+}
+.ink-txt span {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.ink-image {
+  height: 100%;
+  width: 100%;
+}
+.ink-image .img01,
+.ink-image .img04 {
+  position: absolute;
+  top: -5%;
+  right: 31%;
+}
+.ink-image .img02 {
+  position: absolute;
+  top: 75%;
+  left: -20%;
+}
+.ink-image .img03 {
+  position: absolute;
+  top: 75%;
+  right: -20%;
+}
+
+#bg-all {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/main/main_port_bg_green.jpg");
+  background-attachment: fixed;
+}
+#bg-all #ink {
+  background-attachment: fixed;
+  overflow: hidden;
+  background-color: green;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: absolute;
+}
+#bg-all #ink .ink-contents {
+  background-image: url("../images/main/main_port_bg_green.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+}
+#bg-all #ink .ink-contents .ink-txt h1 {
+  color: #fff;
+}
+#bg-all #ink .ink-contents .ink-txt span {
+  color: #fff;
+}
+#bg-all #ink-cover {
+  background-attachment: fixed;
+  background-color: #fff;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+#bg-all #ink-cover .ink-contents {
+  width: 100vw;
+  height: 100vh;
+}
+
+#bg-all-02 {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+#bg-all-02 #nexnine {
+  background-attachment: fixed;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+#bg-all-02 #nexnine .nexnine-contents {
+  background-image: url("../images/main/main_port_bg_nex.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+}
+#bg-all-02 #shin {
+  background-attachment: fixed;
+  background-color: #fff;
+  overflow: hidden;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+}
+#bg-all-02 #shin .shin-contents {
+  width: 100vw;
+  height: 100vh;
+}
