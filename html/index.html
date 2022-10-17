@@ -866,10 +866,8 @@
       const phoneTL = gsap.timeline({
         scrollTrigger: {
           trigger: "#section01",
-          // start: "top top",
-          // end: "1000% top", //padding-bottom 준것과 같음
           pin: false,
-          scrub: 1, //start와 end사이의 1:1대응
+          scrub: 1,
         },
       });
 
@@ -880,7 +878,7 @@
         scrollTrigger: {
           trigger: "#section02",
           pin: false,
-          scrub: 1, //start와 end사이의 1:1대응
+          scrub: 1,
         },
       });
 
@@ -891,7 +889,7 @@
         scrollTrigger: {
           trigger: "#section03",
           scrub: 1,
-          pin: false, //애니메이션 진행할동안 section멈춰있음
+          pin: false,
         },
       });
       section03TL
@@ -1004,7 +1002,6 @@
       //section08 swiper-slide
       new Swiper("#section08 .sec08-02 .contain", {
         speed: 500,
-        // autoplay:true,
         pagination: {
           el: ".swiper-pagination",
           type: "bullets",
@@ -1036,7 +1033,6 @@
       let pagingSwiper = new Swiper("#section10 .swiper-con", {
         pagination: {
           el: ".swiper-pagination2",
-          // type: "bullets",
           clickable: true,
           renderBullet: function (index, className) {
             return '<span class="' + className + '">' + plus[index] + "</span>";
@@ -1098,13 +1094,8 @@
         $("#header").removeClass("black");
       });
 
-      //     if($(window).width() < 900) {
-      //  $("#section03 .sec03_ul01").addClass("sec03_none")
-      //  $("#section03 .sec03_ul02").addClass("sec03_visible")}
-
       new Swiper("#section03 .sec03_ul02", {
         speed: 500,
-        // slidesPerView: 1,
         pagination: {
           el: ".swiper-pagination",
           type: "fraction",
