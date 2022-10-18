@@ -771,7 +771,8 @@
       const section12Y = $("#section12").offset().top;
       const section13Y = $("#section13").offset().top;
 
-      //gnb 클릭시 해당페이지로 이동
+      // ⭐ gnb 클릭시 해당페이지로 이동
+
       $("#gnb .depth01 .depth02:eq(0)").click(function () {
         $("html, body").animate(
           {
@@ -818,7 +819,7 @@
         return false;
       });
 
-      //스크롤시 gnb 색상 변경
+      // ⭐ 스크롤시 gnb 색상 변경
       $(window).on("scroll", function () {
         const scrolltop = $(window).scrollTop();
         if (section01Y > scrolltop) {
@@ -851,7 +852,7 @@
         }
       });
 
-      //UP 버튼 클릭시 화면 맨 위로 이동
+      // ⭐ UP 버튼 클릭시 화면 맨 위로 이동
       $("#btnup").click(function () {
         $("html, body").animate(
           {
@@ -862,7 +863,7 @@
         return false;
       });
 
-      //section01 gsap 애니메이션
+      // ⭐ section01 gsap 애니메이션
       const phoneTL = gsap.timeline({
         scrollTrigger: {
           trigger: "#section01",
@@ -873,7 +874,7 @@
 
       phoneTL.to("#section01 .sec01-top img", { y: -250, rotationY: -55 });
 
-      //section02 gsap 애니메이션
+      // ⭐section02 gsap 애니메이션
       const bgTL = gsap.timeline({
         scrollTrigger: {
           trigger: "#section02",
@@ -884,7 +885,7 @@
 
       bgTL.to("#section02 .after-bg", { webkitClipPath: "inset(0% 0% 0%)" });
 
-      //section03 gsap 애니메이션
+      // ⭐ section03 gsap 애니메이션
       const section03TL = gsap.timeline({
         scrollTrigger: {
           trigger: "#section03",
@@ -900,7 +901,7 @@
         .from(CSSRulePlugin.getRule("#section03 .sec03-con ul li.li03-03 p:nth-child(1):after"), { cssRule: { y: 70 } }, 0)
         .from(CSSRulePlugin.getRule("#section03 .sec03-con ul li.li03-03:before"), { cssRule: { y: 70 } }, 0);
 
-      // section05 tab 클릭시 원 나오는 기능
+      // ⭐  section05 tab 클릭시 원 나오는 기능
       $("#section05 .age li")
         .eq(0)
         .on("click", function () {
@@ -967,7 +968,7 @@
           gsap.from("#section05 .sec05-circle-50 p", { y: -800, ease: "bounce", stagger: { each: 0.1, from: "random" } });
         });
 
-      //section06 gsap 애니메이션
+      // ⭐section06 gsap 애니메이션
       const section06TL = gsap.timeline({
         scrollTrigger: {
           trigger: "#section06",
@@ -977,7 +978,7 @@
       });
       section06TL.from("#section06 .sec06-txt", { opacity: 0 }, 0).from("#section06 .sec06-con ul", { opacity: 0 }, 0);
 
-      //section07 pagination text추가
+      // ⭐section07 pagination text추가
       let bullet = ["속초에선 드론, 액션캠", "가평에선 서핑, 웨이크보드", "무주에선 스노보드, 스키", "영덕과 완도는 낚시", "청도는 글쓰기", "나주는 꽃, 식물 모임이 대세!"];
       let swiper = new Swiper("#section07 .sec07-con", {
         speed: 500,
@@ -992,14 +993,14 @@
         },
       });
 
-      //section08 밀어서 축하하기 클릭시 동영상 변환
+      // ⭐section08 밀어서 축하하기 클릭시 동영상 변환
       const txt02 = $("#section08 .sec08-01 .txt-02");
       const con08 = $("#section08 .sec08-01 .contain");
       txt02.on("click", function () {
         con08.toggleClass("slide-click");
       });
 
-      //section08 swiper-slide
+      // ⭐section08 swiper-slide
       new Swiper("#section08 .sec08-02 .contain", {
         speed: 500,
         pagination: {
@@ -1013,7 +1014,7 @@
         },
       });
 
-      //section10 swiper-slide
+      // ⭐section10 swiper-slide
       let sec10swiper = new Swiper("#section10 .swiper-con", {
         speed: 500,
         // autoplay:true,
@@ -1028,7 +1029,7 @@
         },
       });
 
-      //section10 swiper-slide pagination text추가
+      // ⭐ section10 swiper-slide pagination text추가
       let plus = ["+", "+", "+", "+", "+"];
       let pagingSwiper = new Swiper("#section10 .swiper-con", {
         pagination: {
@@ -1042,7 +1043,7 @@
 
       sec10swiper.controller.control = pagingSwiper;
 
-      //section12 swiper-slide
+      // ⭐section12 swiper-slide
       new Swiper("#section12 .swiper-con", {
         speed: 500,
         slidesPerView: 3,
@@ -1062,7 +1063,7 @@
         },
       });
 
-      //section09 gsap 애니메이션
+      // ⭐section09 gsap 애니메이션
       const section09TL = gsap.timeline({
         scrollTrigger: {
           trigger: "#section09",
@@ -1077,7 +1078,7 @@
         .from("#section09 video:nth-child(2)", { scale: 0 }, 0)
         .from("#section09 video:nth-child(3)", { scale: 0 }, 0);
 
-      //section13 유의사항 클릭기능
+      // ⭐ section13 유의사항 클릭기능
       const depth13_01 = $("#section13 .depth13-01");
 
       depth13_01.on("click", function () {
@@ -1087,7 +1088,7 @@
         depth13_02.toggleClass("display");
       });
 
-      //mobile 자바스크립트
+      // ⭐ mobile 자바스크립트
 
       $("#btnSlide").on("click", function () {
         $("#header").toggleClass("btnSlide");
