@@ -40,6 +40,11 @@
     <header>
       <nav>
         <ul id="gnb">
+          <div class="menu">
+            <span></span>
+            <span></span>
+            <p>MENU</p>
+          </div>
           <li class="logo">
             <a href="#"><img src="../images/layout/logo.png" alt="크리스피그림도넛 로고" /></a>
           </li>
@@ -343,13 +348,19 @@
       </div>
     </footer>
     <script>
-      // ⭐ depth01메뉴 마우스 호버시 depth02메뉴 height조절하여 보이게 함
-      $(".nav").on("mouseenter", function () {
-        $(".nav").css("height", "300px");
-        $("#gnb").addClass("gnbOn");
-      });
-      $(".nav").on("mouseleave", function () {
-        $(".nav").css("height", "80px");
+      // ⭐ depth01메뉴 마우스 enter 시 depth02메뉴 height조절하여 보이게 함 ++ 1720px 미만시 기능 해제 추가
+      $(window).resize(function () {
+        if ($(window).innerWidth() < 1700) {
+          $(".nav").off("mouseenter mouseleave");
+        } else {
+          $(".nav").on("mouseenter", function () {
+            $(".nav").css("height", "300px");
+            $("#gnb").addClass("gnbOn");
+          });
+          $(".nav").on("mouseleave", function () {
+            $(".nav").css("height", "80px");
+          });
+        }
       });
 
       // ⭐ scroll 시작시 header 배경 스타일 추가 기능
@@ -358,6 +369,9 @@
           $("#gnb").addClass("gnbOn");
         } else {
           $("#gnb").removeClass("gnbOn");
+          if ($("#gnb").hasClass("menuOn")) {
+            $("#gnb").addClass("gnbOn");
+          }
         }
       });
 
@@ -403,6 +417,14 @@
       });
       $("#footer .map button").click(function () {
         $(".map").addClass("mapClose");
+      });
+
+      //반응형 부분
+
+      // ⭐ gnb  햄버거 메뉴 클릭시 메뉴 펼쳐지는 기능
+      $("#gnb .menu").click(function () {
+        $("#gnb").addClass("gnbOn");
+        $("#gnb").toggleClass("menuOn");
       });
     </script>
   </body>
