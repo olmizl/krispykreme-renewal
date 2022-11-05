@@ -22,7 +22,8 @@ HTML , SCSS , JQUERY
 웹퍼블리셔로서의 간접경험을 해보는 소중한 기회가 되었습니다.
  
  ## 메인 페이지
-![krispymain](https://user-images.githubusercontent.com/111400649/197171254-9a86d6c2-073b-4c9c-92af-f3423d0aa72b.PNG)
+![screencapture-jolly-kheer-08e0f1-netlify-app-html-2022-11-05-23_33_18](https://user-images.githubusercontent.com/111400649/200125007-6c1e29ba-a0dd-47bf-9fe3-82a93f1ddecb.png)
 
  ## 전체 페이지
- ![krispyfull](https://user-images.githubusercontent.com/111400649/197171248-b5ae6050-27d5-4e34-ba1e-b6e1d3e0df74.png)
+![screencapture-jolly-kheer-08e0f1-netlify-app-html-2022-11-05-23_33_18](https://user-images.githubusercontent.com/111400649/200124954-6e48fd8d-d7df-4bc2-a1c1-40b4eb2541c4.png)
+
